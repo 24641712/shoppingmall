@@ -57,8 +57,8 @@ public class UserControllerTest {
     @Test
     public void update(){
         User user = new User();
-        user.setName("小头1");
-        user.setId(3);
+        user.setName("小头儿子");
+        user.setId(5);
         System.out.println(userService.save(user).toString());
     }
 
