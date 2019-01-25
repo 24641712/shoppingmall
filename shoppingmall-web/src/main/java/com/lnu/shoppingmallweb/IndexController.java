@@ -1,5 +1,6 @@
 package com.lnu.shoppingmallweb;
 
+import com.sun.tracing.dtrace.ModuleAttributes;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -27,6 +28,27 @@ public class IndexController {
         return modelAndView;
     }
 
+    @RequestMapping("/login")
+    public ModelAndView getLogin(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/login");
+        return modelAndView;
+    }
+
+
+    @RequestMapping("/register")
+    public ModelAndView getRegister(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/register");
+        return modelAndView;
+    }
+
+    @RequestMapping("/shopcart")
+    public ModelAndView getShopcart(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/shopcart");
+        return modelAndView;
+    }
 
 
 
