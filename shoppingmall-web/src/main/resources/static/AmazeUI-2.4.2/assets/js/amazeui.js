@@ -14441,7 +14441,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var $parent = $field.closest('.am-form-group');
 
 	    $field.addClass(options.validClass).removeClass(options.inValidClass);
-	    $parent.addClass('am-form-success').removeClass('am-form-error');
+	    $parent.addClass('am-form-success1.ftl').removeClass('am-form-error');
 	    options.onValid.call(this, validity);
 	  },
 
@@ -14452,7 +14452,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    $field.addClass(options.inValidClass + ' ' + options.activeClass).
 	      removeClass(options.validClass);
-	    $parent.addClass('am-form-error').removeClass('am-form-success');
+	    $parent.addClass('am-form-error').removeClass('am-form-success1.ftl');
 	    options.onInValid.call(this, validity);
 	  },
 
@@ -14939,10 +14939,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	// remove valid mark
 	Validator.prototype.removeMark = function() {
 	  this.$element
-	    .find('.am-form-success, .am-form-error, .' + this.options.inValidClass +
+	    .find('.am-form-success1.ftl, .am-form-error, .' + this.options.inValidClass +
 	      ', .' + this.options.validClass)
 	    .removeClass([
-	      'am-form-success',
+	      'am-form-success1.ftl',
 	      'am-form-error',
 	      this.options.inValidClass,
 	      this.options.validClass

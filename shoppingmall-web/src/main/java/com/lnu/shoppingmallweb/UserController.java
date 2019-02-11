@@ -7,11 +7,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
- * 控制层
+ * 用户控制层
  * 实现用户登录验证,注册查询操作
- * @author
+ * @author　ccl
  */
 @Controller
 @RequestMapping("/user")
@@ -30,6 +31,20 @@ public class UserController {
 
     }
 
+    @RequestMapping("/login")
+    public ModelAndView getLogin(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/person/login");
+        return modelAndView;
+    }
+
+
+    @RequestMapping("/register")
+    public ModelAndView getRegister(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/person/register");
+        return modelAndView;
+    }
 
 
 

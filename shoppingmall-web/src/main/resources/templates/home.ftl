@@ -24,20 +24,20 @@
         <ul class="message-l">
             <div class="topMessage">
                 <div class="menu-hd">
-                    <a href="/login" target="_top" class="h">亲，请登录</a>
-                    <a href="/register" target="_top">免费注册</a>
+                    <a href="/user/login" target="_top" class="h">亲，请登录</a>
+                    <a href="/user/register" target="_top">免费注册</a>
                 </div>
             </div>
         </ul>
         <ul class="message-r">
             <div class="topMessage home">
-                <div class="menu-hd"><a href="/home" target="_top" class="h">商城首页</a></div>
+                <div class="menu-hd"><a href="/shopping/home" target="_top" class="h">商城首页</a></div>
             </div>
             <div class="topMessage my-shangcheng">
-                <div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
+                <div class="menu-hd MyShangcheng"><a href="/shopping/frame" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
             </div>
             <div class="topMessage mini-cart">
-                <div class="menu-hd"><a id="mc-menu-hd" href="/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                <div class="menu-hd"><a id="mc-menu-hd" href="/shopping/shopcart" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">3</strong></a></div>
             </div>
             <div class="topMessage favorite">
                 <div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
@@ -1073,48 +1073,48 @@
             <div class="am-g am-g-fixed sale">
                 <div class="am-u-sm-3 sale-item">
                     <div class="s-img">
-                        <a href="# "><img src="../images/sale3.jpg" /></a>
+                        <a href="/shopping/introduction"><img src="../images/sale3.jpg" /></a>
                     </div>
                     <div class="s-info">
-                        <a href="#"><p class="s-title">ZEK 原味海苔</p></a>
+                        <a href="/shopping/introduction"><p class="s-title">ZEK 原味海苔</p></a>
                         <div class="s-price">￥<b>9.90</b>
-                            <a class="s-buy" href="#">秒杀</a>
+                            <a class="s-buy" href="/shopping/introduction">秒杀</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="am-u-sm-3 sale-item">
                     <div class="s-img">
-                        <a href="# "><img src="../images/sale2.jpg" /></a>
+                        <a href="/shopping/introduction"><img src="../images/sale2.jpg" /></a>
                     </div>
                     <div class="s-info">
-                        <a href="#"><p class="s-title">ZEK 原味海苔</p></a>
+                        <a href="/shopping/introduction"><p class="s-title">ZEK 原味海苔</p></a>
                         <div class="s-price">￥<b>9.90</b>
-                            <a class="s-buy" href="#">秒杀</a>
+                            <a class="s-buy" href="/shopping/introduction">秒杀</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="am-u-sm-3 sale-item">
                     <div class="s-img">
-                        <a href="# "><img src="../images/sale1.jpg" /></a>
+                        <a href="/shopping/introduction"><img src="../images/sale1.jpg" /></a>
                     </div>
                     <div class="s-info">
-                        <a href="#"><p class="s-title">ZEK 原味海苔</p></a>
+                        <a href="/shopping/introduction"><p class="s-title">ZEK 原味海苔</p></a>
                         <div class="s-price">￥<b>9.90</b>
-                            <a class="s-buy" href="#">秒杀</a>
+                            <a class="s-buy" href="/shopping/introduction">秒杀</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="am-u-sm-3 sale-item">
                     <div class="s-img">
-                        <a href="# "><img src="../images/sale2.jpg " /></a>
+                        <a href="/shopping/introduction "><img src="../images/sale2.jpg " /></a>
                     </div>
                     <div class="s-info">
-                        <a href="#"><p class="s-title">ZEK 原味海苔</p></a>
+                        <a href="/shopping/introduction"><p class="s-title">ZEK 原味海苔</p></a>
                         <div class="s-price">￥<b>9.90</b>
-                            <a class="s-buy" href="#">秒杀</a>
+                            <a class="s-buy" href="/shopping/introduction">秒杀</a>
                         </div>
                     </div>
                 </div>
@@ -1171,18 +1171,19 @@
                 <div class="am-u-sm-7 am-u-md-5 am-u-lg-2 text-two big">
 
                     <div class="outer-con ">
-                        <div class="title ">
+                        <a href="/shopping/introduction"><div class="title ">
                             雪之恋和风大福
-                        </div>
+                        </div></a>
                         <div class="sub-title ">
                             ¥13.8
                         </div>
 
                     </div>
-                    <a href="# "><img src="../images/act1.png" /></a>
+                    <a href="/shopping/introduction "><img src="../images/act1.png" /></a>
                 </div>
 
                 <li>
+                    <a href="/shopping/introduction">
                     <div class="am-u-md-2 am-u-lg-2 text-three">
                         <div class="boxLi"></div>
                         <div class="outer-con ">
@@ -1194,10 +1195,13 @@
                             </div>
 
                         </div>
-                        <a href="# "><img src="../images/1.jpg " /></a>
+                        <img src="../images/1.jpg"/>
+
                     </div>
+                    </a>
                 </li>
                 <li>
+                    <a href="/shopping/introduction">
                     <div class="am-u-md-2 am-u-lg-2 text-three sug">
                         <div class="boxLi"></div>
                         <div class="outer-con ">
@@ -1209,10 +1213,12 @@
                             </div>
 
                         </div>
-                        <a href="# "><img src="../images/2.jpg " /></a>
+                            <img src="../images/2.jpg " />
                     </div>
+                    </a>
                 </li>
                 <li>
+                    <a href="/shopping/introduction">
                     <div class="am-u-sm-4 am-u-md-5 am-u-lg-4 text-five">
                         <div class="boxLi"></div>
                         <div class="outer-con ">
@@ -1224,25 +1230,29 @@
                             </div>
 
                         </div>
-                        <a href="# "><img src="../images/5.jpg" /></a>
+                        <img src="../images/5.jpg" />
                     </div>
+                    </a>
                 </li>
                 <li>
+                    <a href="/shopping/introduction">
                     <div class="am-u-sm-4 am-u-md-2 am-u-lg-2 text-six">
                         <div class="boxLi"></div>
                         <div class="outer-con ">
                             <div class="title ">
                                 小优布丁
                             </div>
-                            <div class="sub-title ">
+                            <div class="sub-title">
                                 ¥4.8
                             </div>
 
                         </div>
-                        <a href="# "><img src="../images/3.jpg" /></a>
+                        <img src="../images/3.jpg"/>
                     </div>
+                    </a>
                 </li>
                 <li>
+                    <a href="/shopping/introduction">
                     <div class="am-u-sm-4 am-u-md-2 am-u-lg-4 text-six">
                         <div class="boxLi"></div>
                         <div class="outer-con ">
@@ -1254,8 +1264,9 @@
                             </div>
 
                         </div>
-                        <a href="# "><img src="../images/4.jpg" /></a>
+                        <img src="../images/4.jpg" />
                     </div>
+                    </a>
                 </li>
             </div>
 
