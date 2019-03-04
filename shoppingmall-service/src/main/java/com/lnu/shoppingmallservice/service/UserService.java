@@ -1,6 +1,6 @@
 package com.lnu.shoppingmallservice.service;
 
-import com.lnu.shoppingmallentity.User;
+import com.lnu.entity.TbUser;
 
 import java.util.List;
 
@@ -9,11 +9,11 @@ import java.util.List;
  */
 public interface UserService {
 
-   public User addOne(User user);
+   public TbUser addOne(TbUser user);
 
-   public List<User> findAllUser();
+   public List<TbUser> findAllUser();
 
-   public User save(User user);
+   public TbUser save(TbUser user);
 
    public void delete(Integer id);
 

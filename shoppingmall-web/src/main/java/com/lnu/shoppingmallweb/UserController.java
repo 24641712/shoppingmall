@@ -1,6 +1,6 @@
 package com.lnu.shoppingmallweb;
 
-import com.lnu.shoppingmallentity.User;
+import com.lnu.entity.TbUser;
 import com.lnu.shoppingmallservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -23,10 +23,10 @@ public class UserController {
 
     @ResponseBody
     @GetMapping("/add")
-    private User add(){
-        User user = new User();
+    private TbUser add(){
+        TbUser user = new TbUser();
         user.setId(1);
-        user.setName("name");
+        user.setUsername("name");
         return userService.addOne(user);// 成功返回 保存后的 demo
 
     }

@@ -1,7 +1,6 @@
 package com.lnu.shoppingmallservice.serviceimpl;
 
-import com.lnu.shoppingmalldao.UserRepository;
-import com.lnu.shoppingmallentity.User;
+import com.lnu.dao.UserRepository;
 import com.lnu.shoppingmallservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

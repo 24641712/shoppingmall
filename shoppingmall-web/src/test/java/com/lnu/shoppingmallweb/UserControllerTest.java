@@ -1,7 +1,7 @@
 package com.lnu.shoppingmallweb;
 
 import com.lnu.ShoppingmallWebApplication;
-import com.lnu.shoppingmallentity.User;
+import com.lnu.entity.TbUser;
 import com.lnu.shoppingmallservice.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,8 +29,8 @@ public class UserControllerTest {
     **/
     @Test
     public void testAdd(){
-        User user = new User();
-        user.setName("小头");
+        TbUser user = new TbUser();
+        user.setUsername("小头");
         user.setId(3);
         System.out.println(userService.addOne(user).toString());
 
@@ -43,9 +43,9 @@ public class UserControllerTest {
     @Test
     public void testFindAllUser(){
 
-        List<User> list = userService.findAllUser();
+        List<TbUser> list = userService.findAllUser();
 
-        for(User user:list){
+        for(TbUser user:list){
             System.out.println(user.toString());
         }
     }
@@ -56,8 +56,8 @@ public class UserControllerTest {
     **/
     @Test
     public void update(){
-        User user = new User();
-        user.setName("小头儿子");
+        TbUser user = new TbUser();
+        user.setUsername("小头儿子");
         user.setId(5);
         System.out.println(userService.save(user).toString());
     }
