@@ -325,7 +325,7 @@
     </div>
     <li>
         <div class="clearfix tb-btn tb-btn-buy theme-login">
-            <a id="LikBuy" title="点此按钮到下一步确认购买信息" href="#">立即购买</a>
+            <a id="LikBuy" title="点此按钮到下一步确认购买信息" href="/shopping/pay">立即购买</a>
         </div>
     </li>
     <li>
@@ -362,7 +362,7 @@
             <li class="plus_icon"><i>=</i></li>
             <li class="total_price">
                 <p class="combo_price"><span class="c-title">套餐价:</span><span>￥35.00</span> </p>
-                <p class="save_all">共省:<span>￥463.00</span></p> <a href="#" class="buy_now">立即购买</a> </li>
+                <p class="save_all">共省:<span>￥463.00</span></p> <a href="/shopping/pay" class="buy_now">立即购买</a> </li>
             <li class="plus_icon"><i class="am-icon-angle-right"></i></li>
         </ul>
     </div>

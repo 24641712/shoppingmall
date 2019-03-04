@@ -80,7 +80,7 @@
             <li class="index"><a href="#">首页</a></li>
             <li class="qc"><a href="#">闪购</a></li>
             <li class="qc"><a href="#">限时抢</a></li>
-            <li class="qc"><a href="#">团购</a></li>
+            <li class="qc"><a href="#">团购${name}</a></li>
             <li class="qc last"><a href="#">大包装</a></li>
         </ul>
         <div class="nav-extra">
@@ -131,11 +131,12 @@
         <ul>
             <li class="person active">
                 <a href="index.html"><i class="am-icon-user"></i>个人中心</a>
+                <input type="hidden" id="name" name="name" value="${name}">
             </li>
             <li class="person">
                 <p><i class="am-icon-newspaper-o"></i>个人资料</p>
                 <ul class="profile">
-                    <li> <a href="/shopping/information" target="menuFrame">个人信息</a></li>
+                    <li> <a href="/shopping/information" target="menuFrame"><span id="information">个人信息</span></a></li>
                     <li> <a href="/shopping/safety" target="menuFrame">安全设置</a></li>
                     <li> <a href="/shopping/address" target="menuFrame">地址管理</a></li>
                     <li> <a href="/shopping/cardlist" target="menuFrame">快捷支付</a></li>
@@ -152,7 +153,7 @@
             <li class="person">
                 <p><i class="am-icon-dollar"></i>我的资产</p>
                 <ul class="MyAssets">
-                    <li> <a href="/shopping/points" target="menuFrame">我的积分</a></li>
+                    <li> <a href="/shopping/points" target="menuFrame"><span id="points">我的积分</span></a></li>
                     <li> <a href="/shopping/coupon" target="menuFrame">优惠券 </a></li>
                     <li> <a href="/shopping/bonus" target="menuFrame">红包</a></li>
                     <li> <a href="/shopping/walletlist" target="menuFrame">账户余额</a></li>
@@ -163,15 +164,16 @@
             <li class="person">
                 <p><i class="am-icon-tags"></i>我的收藏</p>
                 <ul class="MyCollection">
-                    <li> <a href="/shopping/collection" target="menuFrame">收藏</a></li>
-                    <li> <a href="/shopping/foot" target="menuFrame">足迹</a></li>
+                    <li> <a href="/shopping/collection" target="menuFrame">
+                        <span id="collection">收藏</span></a></li>
+                    <li> <a href="/shopping/foot" target="menuFrame"><span id="foot">足迹</span></a></li>
                 </ul>
             </li>
 
             <li class="person">
                 <p><i class="am-icon-qq"></i>在线客服</p>
                 <ul class="MyService">
-                    <li> <a href="/shopping/consultation" target="menuFrame">商品咨询</a></li>
+                    <li> <a href="/shopping/consultation" target="menuFrame"><span id="consultation">商品咨询</span></a></li>
                     <li> <a href="/shopping/suggest" target="menuFrame">意见反馈</a></li>
 
                     <li> <a href="/shopping/news" target="menuFrame">我的消息</a></li>
@@ -182,6 +184,15 @@
     </aside>
 </div>
 
+<script type="text/javascript">
+    $(document).ready(function () {
+        var name = $("#name").val();
+        alert(name);
+        $("#"+name).click();
+    })
+
+
+</script>
 </body>
 
 </html>

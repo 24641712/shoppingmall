@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  *购物控制层
  *实现用户购物时的控制逻辑
@@ -85,8 +87,14 @@ public class ShoppingController {
     }
 
     @RequestMapping("/frame")
-    public ModelAndView getFrame(){
+    public ModelAndView getFrame(HttpServletRequest request){
         ModelAndView modelAndView = new ModelAndView();
+        String name = request.getParameter("name");
+        if(name==null){
+            System.out.println("这是一个空值");
+            name="collection";
+        }
+        modelAndView.addObject("name",name);
         modelAndView.setViewName("/ftl/personal/frame");
         return modelAndView;
     }
@@ -107,12 +115,6 @@ public class ShoppingController {
         return modelAndView;
     }
 
-    @RequestMapping("/shopcart")
-    public ModelAndView getShopcart(){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("ftl/shopping/shopcart");
-        return modelAndView;
-    }
 
     @RequestMapping("/introduction")
     public ModelAndView getIntroduction(){
@@ -156,6 +158,13 @@ public class ShoppingController {
         return modelAndView;
     }
 
+    @RequestMapping("/shopcart")
+    public ModelAndView getShopcart(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("ftl/shopping/shopcart");
+        return modelAndView;
+    }
+
     @RequestMapping("/success")
     public ModelAndView getSuccess(){
         ModelAndView modelAndView = new ModelAndView();
@@ -181,6 +190,13 @@ public class ShoppingController {
     public ModelAndView getOrderInfo(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/ftl/shopping/orderinfo");
+        return modelAndView;
+    }
+
+    @RequestMapping("/sidebar")
+    public ModelAndView getSidebar(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/ftl/shopping/sidebar");
         return modelAndView;
     }
 
