@@ -4,7 +4,7 @@ import com.lnu.entity.TbUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * @author
+ * @author ccl
  */
-public interface UserRepository extends JpaRepository<TbUser, Integer> {
+public interface UserRepository extends JpaRepository<TbUser, Long> {
 }

@@ -3,17 +3,17 @@ package com.lnu.entity;
 import java.util.Date;
 
 /**
- * 订单实体
+ * 商品描述实体
  * @Author：ccl
  * @Date：19-3-4
  */
-public class TbOrder {
+public class TbItemDesc {
 
-    private Long itemId;
+    private Long itemId;//商品ID
 
-    private Date created;
+    private Date created;//创建时间
 
-    private Date updated;
+    private Date updated;//修改时间
 
     public Long getItemId() {
         return itemId;
@@ -41,7 +41,7 @@ public class TbOrder {
 
     @Override
     public String toString() {
-        return "TbOrder{" +
+        return "TbItemDesc{" +
                 "itemId=" + itemId +
                 ", created=" + created +
                 ", updated=" + updated +

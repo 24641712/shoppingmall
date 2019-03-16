@@ -31,7 +31,7 @@ public class UserControllerTest {
     public void testAdd(){
         TbUser user = new TbUser();
         user.setUsername("小头");
-        user.setId(3);
+        user.setId(3L);
         System.out.println(userService.addOne(user).toString());
 
     }
@@ -58,7 +58,7 @@ public class UserControllerTest {
     public void update(){
         TbUser user = new TbUser();
         user.setUsername("小头儿子");
-        user.setId(5);
+        user.setId(5L);
         System.out.println(userService.save(user).toString());
     }
 
@@ -69,7 +69,7 @@ public class UserControllerTest {
     @Test
     public void delete(){
        try {
-           userService.delete(3);
+           userService.delete(3L);
            System.out.println("删除id为3的用户");
        }catch (Exception e){
            e.printStackTrace();

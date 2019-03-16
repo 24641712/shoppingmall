@@ -15,7 +15,7 @@ public interface UserService {
 
    public TbUser save(TbUser user);
 
-   public void delete(Integer id);
+   public void delete(Long id);
 
 
 

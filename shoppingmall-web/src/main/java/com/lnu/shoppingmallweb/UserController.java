@@ -25,7 +25,7 @@ public class UserController {
     @GetMapping("/add")
     private TbUser add(){
         TbUser user = new TbUser();
-        user.setId(1);
+        user.setId(1L);
         user.setUsername("name");
         return userService.addOne(user);// 成功返回 保存后的 demo
 
